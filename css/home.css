@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight:900;
+    font-style: italic;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.nav-links a:hover, .nav-links a.active{
+    font-weight: 900;
+    background-color: rgb(255, 153, 0, 0.8);
+    border-radius: 5px;
+    
+}
+
+.icons i {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+        height: 5vh;
+        width: 5vh;
+        padding-top: 10px;
+        padding-left: 9px;
+}
+.icons i:hover{
+
+    background-color: rgb(255, 153, 0, 0.8);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("../img/bg.jpg");
+    background-size: cover;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 30px;
+
+    color: #fff;
+}
+.content p {
+    font-size: 70px;
+    font-weight: bolder;
+}
+.orange{
+    color: orange;
+}
+
+.btn1 {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(255, 153, 0, 0.8);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    animation: btnAnimate 3s ease-in 1s infinite;
+}
+@keyframes btnAnimate {
+    from {background-color:rgb(255, 153, 0, 0.8) ;}
+    to {background-color: #000;}
+}
+.btn1:hover {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+
+.quote {
+color: #fff;
+width: 30%;
+position: absolute;
+top: 20%;
+/* transform: translateY(-30%); */
+transform: translateX(225%);
+text-align: center;
+font-size: 15px;
+}
+
+footer {
+    background-color:#000;
+    color: #fff;
+    height: 25vh;
+}
+.footer {
+    background-color: #000;
+    color: orange;
+    font-size: 20px;
+    font-weight: 600 ;
+    display: flex;
+    justify-content: center;
+}
+.fot {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.boxes{
+    color: #fff;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+    font-size: 20px;
+}

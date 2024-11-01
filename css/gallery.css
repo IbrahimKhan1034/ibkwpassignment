@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight:900;
+    font-style: italic;
+}
+
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-links li {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.nav-links a:hover, .nav-links a.active{
+    font-weight: 900;
+    background-color: rgb(255, 153, 0, 0.8);
+    border-radius: 5px;
+    
+}
+
+.icons i {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 10px;
+        height: 5vh;
+        width: 5vh;
+        padding-top: 10px;
+        padding-left: 9px;
+}
+.icons i:hover{
+
+    background-color: rgb(255, 153, 0, 0.8);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100vh;
+}
+
+
+.nutrition {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; 
+    display: none;  
+}
+
+
+figure img:first-child {
+    display: block;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+
+.left-button {
+    left: 20px;
+}
+
+
+.right-button {
+    right: 20px;
+}
+
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caption {
+    position: absolute;
+    top: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 35px;
+    z-index: 10; 
+}
